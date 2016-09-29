@@ -23,16 +23,15 @@
     }
 
     function ShoppingListCheckOffService () {
-      var service = this;
-      var items = [
-        {name:"eggs", quantity: '12' },
-        {name:"milk", quantity: '1  gallon' },
-        {name:"salads", quantity: '500' },
-        {name:"apples", quantity: '1 dozen' },
-        {name:"banannas", quantity: 6 }
-      ];
-      
-      itemsBought =[];
+      var service = this,
+        items = [
+          {name:"eggs", quantity: '12' },
+          {name:"milk", quantity: '1  gallon' },
+          {name:"salads", quantity: '500' },
+          {name:"apples", quantity: '1 dozen' },
+          {name:"banannas", quantity: 6 }
+        ],
+        itemsBought =[];
 
       this.buyItem = function ( index ) {
         var itemBought = items[index];
@@ -52,6 +51,4 @@
         items.splice( index, 1 );
       };
     }
-
-
 })();
